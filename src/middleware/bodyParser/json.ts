@@ -29,10 +29,9 @@
  *
  */
 
-import { hasBody } from "../../../deps.ts";
+import { hasBody, getCharset } from "../../../deps.ts";
 import { createError } from "../../utils/createError.ts";
 import { read } from "./read.ts";
-import { getCharset } from "./getCharset.ts";
 import { typeChecker } from "./typeChecker.ts";
 import type { NextFunction, OpineRequest, OpineResponse } from "../../types.ts";
 

@@ -35,10 +35,9 @@ export {
 } from "https://deno.land/std@0.172.0/streams/conversion.ts";
 
 export {
-  charset,
   contentType,
-  lookup,
-} from "https://deno.land/x/media_types@v3.0.3/mod.ts";
+  getCharset
+} from "jsr:@std/media-types";
 export { Accepts } from "https://deno.land/x/accepts@2.1.1/mod.ts";
 export {
   hasBody,

@@ -1,4 +1,4 @@
-import { lookup } from "../../deps.ts";
+import { contentType } from "../../deps.ts";
 
 /**
  * Parse accept params `str` returning an
@@ -35,7 +35,7 @@ function acceptParams(str: string) {
 export const normalizeType = function (type: string): any {
   return ~type.indexOf("/")
     ? acceptParams(type)
-    : { value: lookup(type), params: {} };
+    : { value: contentType(type), params: {} };
 };
 
 /**

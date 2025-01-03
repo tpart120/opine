@@ -30,9 +30,8 @@
  */
 
 import { read } from "./read.ts";
-import { getCharset } from "./getCharset.ts";
 import type { NextFunction, OpineRequest, OpineResponse } from "../../types.ts";
-import { hasBody } from "../../../deps.ts";
+import { hasBody, getCharset } from "../../../deps.ts";
 import { typeChecker } from "./typeChecker.ts";
 
 /**
